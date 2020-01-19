@@ -1,0 +1,12 @@
+[{
+    "type": "percentage",
+    "title": "sleep time"
+},
+{
+    "type":"point",
+    "title":"maryjane"
+},
+{
+    "type":"geolocation",
+    "title":"running"
+}]
