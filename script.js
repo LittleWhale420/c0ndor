@@ -3,7 +3,10 @@ const PERCENTAGE = "percentage"
 const GEOLOCATION = "geolocation"
 
 fetchData("config.json", (responseText) => {
-    console.log(responseText)
+    configData = JSON.parse(responseText)
+    for (let i = 0; i < configData.length; i++) {
+        createButton(configData[i].title, configData[i].type)
+    }
 })
 
 
@@ -14,10 +17,6 @@ function createButton(title, type) {
     document.body.appendChild(button)
 }
 
-createButton("huy", PERCENTAGE);
-createButton("huy", PERCENTAGE);
-createButton("huy", PERCENTAGE);
-createButton("huy", PERCENTAGE);
 
 function fetchData(url, callback) {
     var xhr = new XMLHttpRequest();

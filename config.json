@@ -1,6 +1,6 @@
-[{
-    "type": "percentage",
-    "title": "sleep time"
+[{  
+    "type":"percentage",
+    "title":"sleep time"
 },
 {
     "type":"point",
